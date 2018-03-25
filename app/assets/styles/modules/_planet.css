@@ -1,0 +1,57 @@
+
+
+.planet {
+    /*position*/
+    position: absolute;
+    /*structure*/
+    height: 15rem;
+    width: 15rem;
+
+    &--centercenter {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    &__body {
+        /*position*/
+        position: absolute;
+        /*structure*/
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        /*style*/
+        background-color: darkorange;
+
+    }
+
+    &__ring {
+        $ringWidth: 1.5rem;
+        $ringGap: 1rem;
+        /*position*/
+        position: absolute;
+        top: calc(-1 * ($ringWidth + $ringGap));
+        left: calc(-1 * ($ringWidth + $ringGap));
+        /*structure*/
+        height: calc(100% + ($ringWidth + $ringGap) *2);
+        width: calc(100% + ($ringWidth + $ringGap) *2);
+        border-radius: 50%;
+        border-width: $ringWidth;
+        /*style*/
+        border-color: purple;
+    }
+
+    &__ring--top {
+        border-top-style: solid;
+    }
+
+    &__ring--bottom {
+        border-bottom-style: solid;
+    }
+
+    &:hover .planet__ring{
+
+    }
+
+}

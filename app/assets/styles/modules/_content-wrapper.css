@@ -1,0 +1,14 @@
+
+.content-wrapper {
+    /*position*/
+    position: relative;
+    left: 0;
+    /*structure*/
+    width: auto;
+    min-height: 50vh;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    /*style*/
+    background-color: $colorNeutralLight;
+
+}
