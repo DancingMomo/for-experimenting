@@ -1,6 +1,6 @@
 /*!
  * modernizr v3.6.0
- * Build https://modernizr.com/download?-setclasses-dontmin
+ * Build https://modernizr.com/download?-setclasses-dontmin-cssclassprefix:has-
  *
  * Copyright (c)
  *  Faruk Ates
@@ -41,7 +41,7 @@
     // Any settings that don't work as separate modules
     // can go in here as configuration.
     _config: {
-      'classPrefix': '',
+      'classPrefix': "has-",
       'enableClasses': true,
       'enableJSClass': true,
       'usePrefixes': true
