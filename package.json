@@ -18,6 +18,7 @@
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "browser-sync": "^2.23.6",
+    "customizr": "github:modernizr/customizr#develop",
     "gulp": "^3.9.1",
     "gulp-modernizr": "^2.0.1",
     "gulp-postcss": "^7.0.1",
