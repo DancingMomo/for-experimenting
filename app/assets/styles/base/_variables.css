@@ -1,4 +1,27 @@
 
 /*COLORS*/
-$colorTextMain: #111111;
-$colorAccentMain: #4FBE66;
+
+/* $colorAccent01: #AFC584; */
+$colorAccent01: #8CAF98;
+$colorAccent02: #C2D3C9;
+$colorAccent03: #E9E0A7;
+$colorAccent04: #445E3B;
+
+$colorOffWhite: #F0F2EF;
+$colorNeutralLight: #eeeeee;
+$colorNeutralDark: #444444;
+$colorOffBlack: #151F20;
+
+$colorLinksMain: $colorAccent04;
+$colorLinksActive: $colorAccent01;
+$colorLinksHover: #CC4A1C;
+$colorTextMain: $colorOffBlack;
+
+$colorAlertNeutral: #222222;
+$colorAlertAnnoyed: pink;
+$colorAlertAngry: hotpink;
+
+/*STRUCTURE*/
+$strucBannerHeight: 3.5rem;
+/* $strucBannerMaxHeight: 6rem; */
+/* $strucBannerMinHeight: 3.5rem; */

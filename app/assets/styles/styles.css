@@ -1,8 +1,18 @@
 /*Vendors*/
-@import "normalize.css";
+/* @import "normalize.css"; */
 /*Base*/
 @import "./base/_variables";
 @import "./base/_globals";
+@import "./base/_fonts";
 @import "./base/_mixins";
 /*modules*/
-@import "./modules/_header";
+@import "./modules/_block";
+@import "./modules/_list";
+@import "./modules/_page";
+@import "./modules/_navigation";
+@import "./modules/__icon"; /*double underscore: this file is generated--find template file to edit*/
+@import "./modules/_banner";
+@import "./modules/_headline";
+@import "./modules/_column";
+@import "./modules/_parallax";
+@import "./modules/_credit";

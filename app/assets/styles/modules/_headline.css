@@ -1,0 +1,15 @@
+
+.headline {
+
+    &--oversized {
+        font-size: 3rem;
+    }
+    &--bottom-padding {
+        padding-bottom: 2rem;
+    }
+
+    &--centered {
+        text-align: center;
+    }
+
+}

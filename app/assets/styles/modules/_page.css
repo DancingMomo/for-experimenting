@@ -1,0 +1,72 @@
+.page {
+    /*position*/
+    position: relative;
+    /*structure*/
+    height: auto;
+    width: 100vw;
+    /*colors*/
+    background-color: $colorAccent02;
+    @mixin clearfix;
+
+    &--light {
+      background-color: $colorOffWhite;
+    }
+
+    &--full {
+        height: 100vh;
+        min-height: 30rem;
+    }
+
+    &--half-min {
+      min-height: 50vh;
+    }
+
+    &--dark {
+
+        background-color: $colorNeutralDark;
+        .page__foreground {
+            color: $colorOffWhite;
+        }
+    }
+
+
+    &__headline {
+        text-align: center;
+    }
+
+    &__background {
+        /*position*/
+        position: absolute;
+        /*structure*/
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        /*colors*/
+
+    }
+    &__background__hero {
+        display: block;
+        margin: auto;
+        width: 100vw;
+
+        img {
+          width: 100vw;
+        }
+    }
+
+    &__foreground {
+        /*position*/
+        position: relative;
+        /*structure*/
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    &__foreground--glow{
+        @mixin beforeGlow;
+    }
+
+
+}

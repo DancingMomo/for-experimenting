@@ -1,0 +1,35 @@
+.block {
+
+    &--constrain-width {
+        max-width: 80rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &--constrain-width--narrower {
+        max-width: 50rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &--centered-text {
+        text-align: center;
+    }
+
+    &--center-vert {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &--background-glow {
+        @mixin beforeGlow;
+    }
+
+    &--gap-paragraphs {
+        & p {
+            padding-bottom: 2rem;
+        }
+    }
+
+}

@@ -20,7 +20,7 @@ gulp.task('watch', () => {
   });
 
   watch('./app/assets/styles/**/*.css', () => {
-     gulp.start('injectCss'); 
+     gulp.start('injectCss');
   });
 
 });

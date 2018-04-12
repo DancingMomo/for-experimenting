@@ -1,0 +1,75 @@
+/*Do not edit modules/__icon directly as it is generated automatically by Gulp.
+Instead, edit gulp/templates/sprite
+Thanks!*/
+
+
+{{#shapes}}
+{{#first}}
+    .icon {
+        background-image: url('/assets/images/sprites/{{{sprite}}}');
+        background-repeat: no-repeat;
+    }
+
+    .has-no-svg .icon {
+        background-image: url('/assets/images/sprites/{{#replaceSvgWithPng}}{{{sprite}}}{{/replaceSvgWithPng}}');
+    }
+
+    .has-cssmask.has-svg .icon--change-color {
+      background-image: none;
+      -webkit-mask-image: url('/assets/images/sprites/{{{sprite}}}');
+      mask-image: url('/assets/images/sprites/{{{sprite}}}');
+
+
+      &--link {
+        background-color: $colorLinksMain;
+      }
+      &--link:hover {
+        background-color: $colorLinksHover;
+      }
+      &--neutral {
+          background-color: $colorAlertNeutral;
+      }
+      &--annoyed {
+          background-color: $colorAlertAnnoyed;
+      }
+      &--angry {
+          background-color: $colorAlertAngry;
+      }
+
+    }
+
+    .has-no-cssmask .icon--change-color,
+    .has-no-svg .icon--change-color {
+      &--link {
+        filter: sepia(100%) hue-rotate(60deg) saturate(1);
+      }
+      &--link:hover {
+        filter: sepia(100%) hue-rotate(0deg) saturate(5);
+      }
+      &--neutral {
+          /* filter: sepia(100%) hue-rotate(0) saturate(0); */
+      }
+      &--annoyed {
+          filter: sepia(100%) hue-rotate(300deg) saturate(3);
+      }
+      &--angry {
+          filter: sepia(100%) hue-rotate(300deg) saturate(10);
+      }
+
+    }
+
+
+
+{{/first}}
+    .icon--{{base}} {
+        width: {{width.outer}}px;
+        height: {{height.outer}}px;
+        background-position: {{position.relative.xy}};
+    }
+
+    .has-cssmask.has-svg .icon--change-color.icon--{{base}} {
+        /* width: {{width.outer}}px; */
+        /* height: {{height.outer}}px; */
+        mask-position: {{position.relative.xy}};
+    }
+{{/shapes}}

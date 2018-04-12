@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Roboto:400,700');
+
+$fontFancyCursive: 'Gloria Hallelujah', cursive;
+$fontSansSerif: 'Roboto', 'Ariel', sans-serif;
+
+
+
+* {
+    font-family: $fontSansSerif;
+}
+
+h1 {
+    font-family: $fontFancyCursive;
+}

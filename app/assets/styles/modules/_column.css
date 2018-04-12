@@ -1,0 +1,13 @@
+.column {
+
+
+    &--2-4 {
+        float: left;
+        width: 50%;
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+    /* &--no-end-padding {
+        padding-right: 0;
+    } */
+}

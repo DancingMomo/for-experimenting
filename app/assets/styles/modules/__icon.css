@@ -1,0 +1,148 @@
+/*Do not edit modules/__icon directly as it is generated automatically by Gulp.
+Instead, edit gulp/templates/sprite
+Thanks!*/
+
+
+    .icon {
+        background-image: url('/assets/images/sprites/sprite-d98fb9c1.svg');
+        background-repeat: no-repeat;
+    }
+
+    .has-no-svg .icon {
+        background-image: url('/assets/images/sprites/sprite-d98fb9c1.png');
+    }
+
+    .has-cssmask.has-svg .icon--change-color {
+      background-image: none;
+      -webkit-mask-image: url('/assets/images/sprites/sprite-d98fb9c1.svg');
+      mask-image: url('/assets/images/sprites/sprite-d98fb9c1.svg');
+
+
+      &--link {
+        background-color: $colorLinksMain;
+      }
+      &--link:hover {
+        background-color: $colorLinksHover;
+      }
+      &--neutral {
+          background-color: $colorAlertNeutral;
+      }
+      &--annoyed {
+          background-color: $colorAlertAnnoyed;
+      }
+      &--angry {
+          background-color: $colorAlertAngry;
+      }
+
+    }
+
+    .has-no-cssmask .icon--change-color,
+    .has-no-svg .icon--change-color {
+      &--link {
+        filter: sepia(100%) hue-rotate(60deg) saturate(1);
+      }
+      &--link:hover {
+        filter: sepia(100%) hue-rotate(0deg) saturate(5);
+      }
+      &--neutral {
+          /* filter: sepia(100%) hue-rotate(0) saturate(0); */
+      }
+      &--annoyed {
+          filter: sepia(100%) hue-rotate(300deg) saturate(3);
+      }
+      &--angry {
+          filter: sepia(100%) hue-rotate(300deg) saturate(10);
+      }
+
+    }
+
+
+
+    .icon--icon-alert-00 {
+        width: 102px;
+        height: 102px;
+        background-position: 0 0;
+    }
+
+    .has-cssmask.has-svg .icon--change-color.icon--icon-alert-00 {
+        /* width: 102px; */
+        /* height: 102px; */
+        mask-position: 0 0;
+    }
+    .icon--icon-close-00 {
+        width: 102px;
+        height: 102px;
+        background-position: 50% 0;
+    }
+
+    .has-cssmask.has-svg .icon--change-color.icon--icon-close-00 {
+        /* width: 102px; */
+        /* height: 102px; */
+        mask-position: 50% 0;
+    }
+    .icon--icon-menu-00 {
+        width: 102px;
+        height: 102px;
+        background-position: 0 50%;
+    }
+
+    .has-cssmask.has-svg .icon--change-color.icon--icon-menu-00 {
+        /* width: 102px; */
+        /* height: 102px; */
+        mask-position: 0 50%;
+    }
+    .icon--icon-social-facebook-00 {
+        width: 102px;
+        height: 102px;
+        background-position: 50% 50%;
+    }
+
+    .has-cssmask.has-svg .icon--change-color.icon--icon-social-facebook-00 {
+        /* width: 102px; */
+        /* height: 102px; */
+        mask-position: 50% 50%;
+    }
+    .icon--icon-social-pinterest-00 {
+        width: 102px;
+        height: 102px;
+        background-position: 100% 0;
+    }
+
+    .has-cssmask.has-svg .icon--change-color.icon--icon-social-pinterest-00 {
+        /* width: 102px; */
+        /* height: 102px; */
+        mask-position: 100% 0;
+    }
+    .icon--icon-social-twitter-00 {
+        width: 102px;
+        height: 102px;
+        background-position: 100% 50%;
+    }
+
+    .has-cssmask.has-svg .icon--change-color.icon--icon-social-twitter-00 {
+        /* width: 102px; */
+        /* height: 102px; */
+        mask-position: 100% 50%;
+    }
+    .icon--icon-social-youtube-00 {
+        width: 102px;
+        height: 102px;
+        background-position: 0 100%;
+    }
+
+    .has-cssmask.has-svg .icon--change-color.icon--icon-social-youtube-00 {
+        /* width: 102px; */
+        /* height: 102px; */
+        mask-position: 0 100%;
+    }
+    .icon--icon-unsplash-00 {
+        width: 102px;
+        height: 102px;
+        background-position: 50% 100%;
+    }
+
+    .has-cssmask.has-svg .icon--change-color.icon--icon-unsplash-00 {
+        /* width: 102px; */
+        /* height: 102px; */
+        mask-position: 50% 100%;
+    }

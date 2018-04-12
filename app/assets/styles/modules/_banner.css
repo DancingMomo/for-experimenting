@@ -1,0 +1,40 @@
+.banner {
+    /*position*/
+    position: fixed;
+    z-index: 500;
+    /*structure*/
+    height: $strucBannerHeight;
+    width: 100vw;
+    /*style*/
+
+    /*transitions*/
+    transition-property: all;
+    transition-duration: 1000ms;
+
+    &--travel {
+        /* height: $strucBannerMinHeight; */
+        background-color: rgba($colorOffWhite, .95);
+    }
+
+
+    &__logo {
+        /*display*/
+        display: inline-block;
+        /*position*/
+        position: relative;
+        margin-left: 1.3rem;
+        margin-top: 1rem;
+        /*structure*/
+        transform: scale(.55);
+        transform-origin: 0 0;
+        /*transitions*/
+        transition-propety: all;
+        transition-duration: 1000ms;
+
+        .banner--travel & {
+            margin-top: .5rem;
+            transform: scale(.40);
+        }
+    }
+
+}

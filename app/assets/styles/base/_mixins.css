@@ -23,3 +23,20 @@
     display: table;
   }
 }
+
+
+
+@define-mixin beforeGlow $color: $colorOffWhite {
+    &::before {
+        content: "";
+        z-index: -1;
+        background-color: $color;
+        height: 110%;
+        width: 110%;
+        border-radius: 50%;
+        position: absolute;
+        top: -5%;
+        left: -5%;
+        filter: blur(40px);
+    }
+}
